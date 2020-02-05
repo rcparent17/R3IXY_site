@@ -3,34 +3,76 @@
   <head>
     <meta charset="utf-8">
     <title>R3IXY</title>
+    <style media="screen">
+      body{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      h1 {
+        font-family:Arial;
+        display: none;
+        color:white;
+        font-size:5vw;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      br {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      a {
+        padding: 40px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-decoration: none !important;
+        border:0px !important;
+        outline:none;
+        border-width: 0px;
+        outline-width:0px;
+        border-bottom: none;
+      }
+    </style>
   </head>
-  <body style="background-color:black;">
+  <body style="background-color:black;" id="body">
     <div class="main">
-      <center>
-        <img src="resources/shirt.jpg" width="70%">
-        <h1 style="font-family:Arial; color:white; font-size:6vw; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">LISTEN</h1>
+        <img src="resources/shirt.jpg" width="70%" style="display: none;" id="logo">
         <br>
-          <div class="sitelinks">
+        <h1 id="listentext">LISTEN</h1><br><br>
+          <div class="sitelinks" id="links" style="display: none;">
             <a href="https://open.spotify.com/artist/0TFu2ko9MQHkvTVb5N3lXV">
-              <img src="resources/Spotify.png" width="50%">
-            </a><br><br>
+              <img src="resources/Spotify.png" width="40%">
+            </a>
             <a href="https://r3ixy.bandcamp.com/releases">
               <img src="resources/Bandcamp.png" width="30%">
-            </a><br><br>
+            </a>
             <a href="https://www.youtube.com/channel/UCShRKGW4mKZYcW6fvyTkOmw">
-              <img src="resources/Youtube.png" width="50%">
-            </a><br><br><br><br>
+              <img src="resources/Youtube.png" width="40%">
+            </a>
             <a href="https://music.apple.com/bn/artist/r3ixy/1456666180">
-              <img src="resources/Apple.png" width="50%">
-            </a><br><br><br><br>
+              <img src="resources/Apple.png" width="40%">
+            </a>
             <a href="https://music.amazon.com/artists/B00KK3ZXMW/r3ixy">
-              <img src="resources/Amazon.png" width="40%">
-            </a><br><br><br><br>
+              <img src="resources/Amazon.png" width="30%">
+            </a>
             <a href="https://soundcloud.com/r3ixy">
-              <img src="resources/Soundcloud.png" width="40%">
-            </a><br><br>
+              <img src="resources/Soundcloud.png" width="30%">
+            </a>
           </div>
-      </center>
+          <script src="mobile.js"></script>
     </div>
   </body>
 </html>
