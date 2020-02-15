@@ -18,10 +18,10 @@ var images = elements.querySelectorAll('img');
 var onMobile = window.innerHeight > window.innerWidth;
 
 if (onMobile) {
-  logo.style.width = "40%";
+  logo.style.width = "70%";
 }
 else{
-  logo.style.width = "15%";
+  logo.style.width = "30%";
   listen.style.fontSize = "2vw";
 }
 
@@ -33,7 +33,7 @@ for (var i = 0; i < links.length; i++) {
     bodyRef.appendChild(document.createElement("br"));
   }
   else {
-    images[i].style.width = "14%";
+    images[i].style.width = "15%";
     bodyRef.appendChild(links[i]);
     if (i==2){
       bodyRef.appendChild(document.createElement("br"));
