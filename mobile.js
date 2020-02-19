@@ -29,20 +29,21 @@ var socImages = social.querySelectorAll('img');
 var supImages = support.querySelectorAll('img');
 
 initTop();
-drawGroup(mLinks, mImages, 3, "15%");
+drawGroup(mLinks, mImages, 3, "15%", "50%");
 showText("followtext");
-drawGroup(socLinks, socImages, 3, "10%");
+drawGroup(socLinks, socImages, 3, "10%", "20%");
 showText("supporttext");
-drawGroup(supLinks, supImages, 3, "20%");
+drawGroup(supLinks, supImages, 3, "20%", "60%");
 
-function drawGroup(links, images, width, imgSize){
+function drawGroup(links, images, width, desktopSize, mobileSize){
   for (var i = 0; i < links.length; i++) {
     if (onMobile) {
+      images[i].style.width = mobileSize;
       bodyRef.appendChild(links[i]);
       bigBreak();
     }
     else {
-      images[i].style.width = imgSize;
+      images[i].style.width = desktopSize;
       bodyRef.appendChild(links[i]);
       if (i === width-1 && width!=-1){
         bigBreak();
