@@ -12,34 +12,28 @@
 //all divs
 var music = document.getElementById('musiclinks');
 var social = document.getElementById('sociallinks');
-//var support = document.getElementById('supportlinks');
+var support = document.getElementById('supportlinks');
 
 //body reference for site-putting-together-purposes
 var bodyRef = document.getElementById('body');
-
 var onMobile = window.innerHeight > window.innerWidth;
 
-initTop();
+
 
 var mLinks = music.querySelectorAll('a');
 var socLinks = social.querySelectorAll('a');
+var supLinks = support.querySelectorAll('a');
 
 var mImages = music.querySelectorAll('img');
 var socImages = social.querySelectorAll('img');
+var supImages = support.querySelectorAll('img');
 
+initTop();
 drawGroup(mLinks, mImages, 3, "15%");
-
-follow = initElement("followtext");
-if(onMobile){
-  follow.style.fontSize = "7vw";
-}
-else {
-  follow.style.fontSize = "4vw";
-}
-
-bodyRef.appendChild(follow);
-
+showText("followtext");
 drawGroup(socLinks, socImages, 3, "10%");
+showText("supporttext");
+drawGroup(supLinks, supImages, 3, "20%");
 
 function drawGroup(links, images, width, imgSize){
   for (var i = 0; i < links.length; i++) {
@@ -56,6 +50,17 @@ function drawGroup(links, images, width, imgSize){
     }
   }
   bigBreak();
+}
+
+function showText(_el){
+  el = initElement(_el);
+  if(onMobile){
+    el.style.fontSize = "7vw";
+  }
+  else {
+    el.style.fontSize = "4vw";
+  }
+  bodyRef.appendChild(el)
 }
 
 function initTop(){
