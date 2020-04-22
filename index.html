@@ -12,9 +12,7 @@
       }
       h1 {
         font-family:Arial;
-        display: none;
         color:white;
-        font-size:30%;
         -webkit-touch-callout: none;
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -50,48 +48,104 @@
     </style>
   </head>
   <body style="background-color:black;" id="body">
-    <div class="main">
-        <img src="resources/logo.png" width="70%" style="display: none;" id="logo">
-        <h1 id="listentext">LISTEN</h1>
-          <div id="musiclinks" style="display: none;">
+    <div class="main" id="desktop" style="display: none;">
+        <img src="resources/logo.png" style="width: 30%;" id="logo">
+        <h1 id="listentext" style="font-size: 4vw;">LISTEN</h1>
+          <div id="musiclinks">
+            <a href="https://open.spotify.com/artist/0TFu2ko9MQHkvTVb5N3lXV">
+              <img src="resources/Spotify.png" width="15%">
+            </a>
+            <a href="https://r3ixy.bandcamp.com/releases">
+              <img src="resources/Bandcamp.png" width="15%">
+            </a>
+            <a href="https://www.youtube.com/channel/UCShRKGW4mKZYcW6fvyTkOmw">
+              <img src="resources/Youtube.png" width="15%">
+            </a>
+            <br><br><br>
+            <a href="https://music.apple.com/bn/artist/r3ixy/1456666180">
+              <img src="resources/Apple.png" width="15%">
+            </a>
+            <a href="https://music.amazon.com/artists/B00KK3ZXMW/r3ixy">
+              <img src="resources/Amazon.png" width="15%">
+            </a>
+            <a href="https://soundcloud.com/r3ixy">
+              <img src="resources/Soundcloud.png" width="15%">
+            </a>
+          </div>
+          <br><br><br>
+          <h1 id="followtext" style="font-size: 4vw;">FOLLOW</h1>
+          <div id="sociallinks">
+            <a href="https://www.instagram.com/r3ixy_official/">
+              <img src="resources/Instagram.png" width="10%">
+            </a>
+            <a href="https://www.facebook.com/r3ixy.official">
+              <img src="resources/Facebook.png" width="10%">
+            </a>
+          </div>
+          <br><br><br>
+          <h1 id="supporttext" style="font-size: 4vw;">SUPPORT</h1>
+          <div id="supportlinks">
+            <a href="https://teespring.com/stores/r3ixy">
+              <img src="resources/Teespring.png" width="20%">
+            </a>
+            <a href="https://www.patreon.com/r3ixy">
+              <img src="resources/Patreon.png" width="20%">
+            </a>
+          </div>
+    </div>
+    <div class="main" id="mobile" style="display: none;">
+        <img src="resources/logo.png" style="width: 70%;" id="logo">
+        <h1 id="listentext" style="font-size: 7vw;">LISTEN</h1>
+          <div id="musiclinks">
             <a href="https://open.spotify.com/artist/0TFu2ko9MQHkvTVb5N3lXV">
               <img src="resources/Spotify.png" width="50%">
             </a>
+            <br><br><br>
             <a href="https://r3ixy.bandcamp.com/releases">
-              <img src="resources/Bandcamp.png" width="35%">
+              <img src="resources/Bandcamp.png" width="50%">
             </a>
+            <br><br><br>
             <a href="https://www.youtube.com/channel/UCShRKGW4mKZYcW6fvyTkOmw">
               <img src="resources/Youtube.png" width="50%">
             </a>
+            <br><br><br>
             <a href="https://music.apple.com/bn/artist/r3ixy/1456666180">
               <img src="resources/Apple.png" width="50%">
             </a>
+            <br><br><br>
             <a href="https://music.amazon.com/artists/B00KK3ZXMW/r3ixy">
-              <img src="resources/Amazon.png" width="40%">
+              <img src="resources/Amazon.png" width="50%">
             </a>
+            <br><br><br>
             <a href="https://soundcloud.com/r3ixy">
-              <img src="resources/Soundcloud.png" width="40%">
+              <img src="resources/Soundcloud.png" width="50%">
+            </a>
+            <br><br><br>
+          </div>
+          <br><br><br>
+          <h1 id="followtext" style="font-size: 7vw;">FOLLOW</h1>
+          <div id="sociallinks">
+            <a href="https://www.instagram.com/r3ixy_official/">
+              <img src="resources/Instagram.png" width="20%">
+            </a>
+            <br><br><br>
+            <a href="https://www.facebook.com/r3ixy.official">
+              <img src="resources/Facebook.png" width="20%">
+            </a>
+            <br><br><br>
+          </div>
+          <br><br><br>
+          <h1 id="supporttext" style="font-size: 7vw;">SUPPORT</h1>
+          <div id="supportlinks">
+            <a href="https://teespring.com/stores/r3ixy">
+              <img src="resources/Teespring.png" width="60%">
+            </a>
+            <br><br><br>
+            <a href="https://www.patreon.com/r3ixy">
+              <img src="resources/Patreon.png" width="60%">
             </a>
           </div>
-          <h1 id="followtext">FOLLOW</h1>
-            <div id="sociallinks" style="display: none;">
-              <a href="https://www.instagram.com/r3ixy_official/">
-                <img src="resources/Instagram.png" width="15%">
-              </a>
-              <a href="https://www.facebook.com/r3ixy.official">
-                <img src="resources/Facebook.png" width="15%">
-              </a>
-            </div>
-            <h1 id="supporttext">SUPPORT</h1>
-              <div id="supportlinks" style="display: none;">
-                <a href="https://teespring.com/stores/r3ixy">
-                  <img src="resources/Teespring.png" width="15%">
-                </a>
-                <a href="https://www.patreon.com/r3ixy">
-                  <img src="resources/Patreon.png" width="25%">
-                </a>
-              </div>
-          <script src="mobile.js"></script>
     </div>
+    <script src="mobile.js"></script>
   </body>
 </html>
