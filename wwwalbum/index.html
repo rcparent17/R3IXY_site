@@ -10,7 +10,7 @@
         margin-right: auto;
         text-align: center;
       }
-      h1 {
+      h1, p {
         font-family:Arial;
         color:white;
         -webkit-touch-callout: none;
@@ -29,7 +29,13 @@
         user-select: none;
       }
       img{
-	       padding: 15px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+	      padding: 15px;
       }
       a {
         -webkit-touch-callout: none;
@@ -47,10 +53,13 @@
       }
     </style>
   </head>
-  <body style="background-color:black;" id="body">
+  <body style="background-color:#2e0a27;" id="body">
     <div class="main" id="desktop" style="display: none;">
-        <img src="resources/logo.png" style="width: 30%;" id="logo">
-        <h1 id="listentext" style="font-size: 4vw;">LISTEN</h1>
+        <a href="../index.html">
+          <h1 style="font-size: 5vw;">R3IXY</h1>
+        </a>
+        <img src="resources/wwwalbum/album cover.png" width="25%">
+        <h1 id="listentext" style="font-size: 4vw;">LISTEN TO WWW</h1>
           <div id="musiclinks">
             <a href="https://open.spotify.com/artist/0TFu2ko9MQHkvTVb5N3lXV">
               <img src="resources/Spotify.png" width="15%">
@@ -73,6 +82,17 @@
             </a>
           </div>
           <br><br><br>
+          <h1 id="thanktext" style="font-size: 4vw;">SPECIAL THANKS</h1>
+          <div id="thanks">
+            <img src="resources/wwwalbum/eric.jpg" width="20%">
+            <img src="resources/wwwalbum/laura.jpg" width="20%">
+            <br>
+            <p style="max-width: 45%; margin-left: auto; margin-right: auto;">Eric Layhe (left) and Laura Izquierdo (right) both made incredible additions to this album. Laura wrote and sang the vocals for "Together Apart" and Eric recorded some bass and guitar parts for "Bad Actor". Without them, this album wouldn't be nearly as awesome as it is. I would also like to thank the freesound.org users listed below, who made some of the sound effects used in this album.</p>
+            <h1 id="fs" style="font-size: 2vw;">FREESOUND.ORG USERS</h1>
+            <p style="margin-left: auto; margin-right: auto;">jlew</p>
+            <p style="margin-left: auto; margin-right: auto;">odilonmarcenaro</p>
+            <p style="margin-left: auto; margin-right: auto;">joebro10</p>
+          </div>
           <h1 id="followtext" style="font-size: 4vw;">FOLLOW</h1>
           <div id="sociallinks">
             <a href="https://www.instagram.com/r3ixy_official/">
