@@ -1,4 +1,4 @@
-/*author: Reilly Parent
+/*author: Reilly Parent 
 *                 r
 *    %   %%%%%  %
 *  c    %%     %%
